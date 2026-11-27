@@ -558,7 +558,7 @@ function computeReconciliations(aggregations, rankings, classifiedRows, bancosMa
         sumSubactividades: sumSub.toFixed(2),
         saldoActividad: saldoAct.toFixed(2),
         diferencia: diff.toFixed(2),
-        cuadra: diff.lte(0.001)
+        cuadra: diff.eq(0)
       });
     }
   }

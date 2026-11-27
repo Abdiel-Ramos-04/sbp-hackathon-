@@ -32,7 +32,7 @@ export const PROFILES = {
 
 export function AppProvider({ children }) {
   const [profile, setProfileState] = useState(() => {
-    const saved = localStorage.getItem('sbp_profile') || 'administrador';
+    const saved = localStorage.getItem('sbp_profile') || 'publico';
     const valid = PROFILES[saved] ? saved : 'publico';
     setApiProfile(valid);
     return valid;
